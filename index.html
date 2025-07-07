@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+  
+  
+</head>
+<body>
+  <div class="calculator-wrapper">
+  <!-- Sección izquierda -->
+  <div class="form-box">
+    <h1>Mortgage Calculator</h1>
+    <a href="#" class="clear-link">Clear All</a>
+
+    <form>
+      <label for="amount">Mortgage Amount</label>
+      <div class="input-group">
+        <span class="prefix">£</span>
+        <input id="amount" type="number" placeholder="300,000">
+      </div>
+
+      <div class="inline-inputs">
+        <div class="input-half">
+          <label for="term">Mortgage Term</label>
+          <div class="input-group">
+            <input id="term" type="number" placeholder="25">
+            <span class="suffix">years</span>
+          </div>
+        </div>
+
+        <div class="input-half">
+          <label for="rate">Interest Rate</label>
+          <div class="input-group">
+            <input id="rate" type="number" step="0.01" placeholder="5.25">
+            <span class="suffix">%</span>
+          </div>
+        </div>
+      </div>
+
+      <label>Mortgage Type</label>
+      <div class="radio-group">
+        <label class="radio-option active">
+          <input type="radio" name="type" checked>
+          <span>Repayment</span>
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="type">
+          <span>Interest Only</span>
+        </label>
+      </div>
+
+      <button type="submit" class="calculate-btn">
+        <span class="icon"><img src="assets/images/icon-calculator.svg" alt="icon-calculator"></span>
+        Calculate Repayments
+      </button>
+    </form>
+  </div>
+
+  <!-- Sección derecha -->
+  <div class="results-box">
+    <h2>Your results</h2>
+    <p class="results-desc">
+      Your results are shown below based on the information you provided. To adjust the results, edit the form and click ‘calculate repayments’ again.
+    </p>
+
+    <div class="results-card">
+      <p class="label">Your monthly repayments</p>
+      <p class="amount">£1,797.74</p>
+      <hr />
+      <p class="total-label">Total you’ll repay over the term</p>
+      <p class="total-amount">£539,322.94</p>
+    </div>
+  </div>
+</div>
+
+
+ <!--comentario>
+    
+    <article>
+      <h1>Mortgage calculator</h1>
+      <p>clear all</p>
+      <form action="">
+<label for="amount">Mortgage Amount</label>
+<input id="amount" type="number">
+<label for="term">Mortgage Term</label>
+<input id="term" type="number">
+<label for="rate">Interest Rate</label>
+<input id="rate" type="number">
+<label>Mortgage Type</label>
+<input id="type1" type="checkbox">
+<label for="type1">Repayment</label>
+<input id="type2" type="checkbox">
+<label for="type2">Interest Only</label>
+</form>
+    </article>
+  </section>-->
+ 
+</body>
+</html>
